@@ -1,0 +1,99 @@
+:root {
+  --font-logo: 'Skranji', system-ui;
+  --font-text: 'Nunito Sans', sans-serif;
+  --form-text-padding: 0 5vh 0 5vh;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.left-container {
+  flex: 1;
+
+  /*Image credit :
+  https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA */
+  background: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 60%;
+  margin-top: 20vh;
+  padding: 20px;
+}
+
+.odin-logo {
+  width: 25%;
+  height: 25%;
+}
+
+.odin-text {
+  font-family: var(--font-logo);
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.right-container {
+  display: flex;
+  flex-flow: column wrap;;
+  flex: 1.5;
+  justify-content: space-evenly;
+  background-color: rgba(229, 231, 235);
+  font-family: var(--font-text);
+
+}
+
+.form-heading  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--form-text-padding);
+}
+.form-content {
+  background-color: white;
+  padding: 10px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+
+.sign-up-form > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.sign-up-form > div > div {
+  display: inline-block;
+}
+.form-submit {
+  padding: var(--form-text-padding);
+}
+
+.form-submit > button {
+  background-color: #596D48;
+  padding: 2vh;
+  border-radius: 15px;
+  color: white;
+  font-family: var(--font-text);
+  font-size: large;
+}
